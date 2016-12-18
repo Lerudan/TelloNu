@@ -32,10 +32,17 @@ $to      = 'a@example.com'; //set recieving mail here
       <div class="row">
 
         <div class="col-sm-8 blog-main sidebar-module">
+<?php 
+if(isset($_POST['msg'])) 
+{
+?>
         <div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
- <?php if(isset($_POST['msg'])) { echo(" <strong>Danke!</strong> Deine Nachricht wurde verschickt.");} ?>
-</div>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Danke!</strong> Deine Nachricht wurde verschickt.
+        </div>
+<?php 
+}
+?>
 
                  <h2 class="blog-post-title">Anunyme Box</h2>
                 <p class="lead blog-post-meta">Hinterlasse, was du willst</p>
