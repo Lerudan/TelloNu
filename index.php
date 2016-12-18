@@ -68,7 +68,7 @@ $subject = 'Neuer Tell';
 $message = wordwrap($message, 70, "\r\n");
 $headerz = 'From: ' . $to' . "\r\n" .
     'Date: ' . date("D, d M Y H:m:s") .
-    'Reply-To: ' $to  . "\r\n" .
+    'Reply-To: ' . $to  . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headerz);
