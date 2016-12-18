@@ -18,9 +18,8 @@ Just a shitty, minimal, tellonym clone
   - twitter (twidge?)
 - Craptcha?
 - "Setup"-Webapp: Name rein, Email rein und es kommt eine PHP-Datei raus, die dann alles hat und hochladbar ist
+- mobilfreundliches Design (Blame naums!)
 
 ## Lizenzen
-- das is so Kacke...
-- ne Spaß beiseite
 - CC-Zero, ihr dürft alles, ich muss nix wissen
 - nur nicht behaupten, dass ich es gemacht habe, wenn ihr Schuld seid
