@@ -13,7 +13,6 @@ Just a shitty, minimal, tellonym clone
 - vielleicht wird das hier dann auch eines Tages mal cool
 
 ## Wenn ich mal Zeit habe (also nie)
-- Weg mit dem Bootstrap, eigenes CSS rein
 - Python rewrite
 - weitere Backends (statt Email)
   - twitter (twidge?)
