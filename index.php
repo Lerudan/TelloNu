@@ -1,104 +1,71 @@
 <!DOCTYPE html>
-<?php
-
-
-$to      = 'a@example.com'; //set recieving mail here
-?>
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700,400italic&subset=latin-ext" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript">
+        var close = function ( className )
+        {
+            document.getElementsByClassName( className )[0].hidden=true;
+        }
+    </script>
 
     <title>TelloNu</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="static/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
   </head>
 
   <body>
+    <div class="main">
 
-    <div class="container">
-      <div class="blog-header">
+<?php 
+if(isset($_GET['success'])) 
+{
+?>
+        <div class="success">
+          <a href="javascript:close('success');" class="close">x</a>
+          <strong>Danke!</strong> Deine Nachricht wurde verschickt.
+        </div>
+<?php 
+}
 
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-8 blog-main sidebar-module">
-        <div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
- <?php if(isset($_POST['msg'])) { echo(" <strong>Danke!</strong> Deine Nachricht wurde verschickt.");} ?>
-</div>
-
-                 <h2 class="blog-post-title">Anunyme Box</h2>
-                <p class="lead blog-post-meta">Hinterlasse, was du willst</p>
+if(isset($_GET['error'])) 
+{
+?>
+        <div class="error">
+          <a href="javascript:close('error');" class="close">x</a>
+          <strong>Ups!</strong> Da hat etwas nicht geklappt.
+        </div>
+<?php 
+}
+?>
+        <div class="content">
+                 <h2>Anunyme Box</h2>
+                <h3>Hinterlasse, was du willst</h3>
             <!-- <h3 class="blog-post-title">Hier ist die Box</h3> -->
             
-            <form action="index.php" method="post"><div class="form-horizontal">
-              <div class="form-group">           
-                <textarea class="form-control" rows="5"i name="msg"></textarea>
-              </div>
-             <div class="form-group">
-                <div class="text-center"><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> Abschicken</button></div>
-              </div>
+            <form action="nutello_send.php" method="post"><div class="form-horizontal">
+                <textarea class="editor" rows="5" name="msg"></textarea>
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> Abschicken</button>
             </div>
             </form>
-        
-<?php 
-
-if(isset($_POST['msg'])) {
-
-$message = (string) $_POST['msg'];
-
-$subject = 'Neuer Tell';
-$message = wordwrap($message, 70, "\r\n");
-$headerz = 'From: ' . $to' . "\r\n" .
-    'Date: ' . date("D, d M Y H:m:s") .
-    'Reply-To: ' $to  . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-mail($to, $subject, $message, $headerz);
-
-
-}
-?> 
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module">
+         </div>
+        <!-- /.blog-main -->
+          <div class="sidebar">
             <h3>das Kleingedruckte</h3>
               <p> Alles, was du hier eingibst, wird Nu per Email zugeschickt.</p>
               <p> Außer dem Inhalt der Nachricht wird nichts gespeichert oder verschickt.</p>
               <p> Nu hat keine Möglichkeit zuzuordnen, wer eine Nachricht verschickt hat.</p>
               <p> Falls du eine Antwort möchtest, vermerke das, ich gehe dann vielleicht drauf ein.</p>
-              
-
-           
           </div>
-        </div><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Anonyme Dingsbox für das Nu</p>
-      <p>Gebaut mit <a href="http://getbootstrap.com">Bootstrap</a></p>
-      <p>Gelitten unter <a hreft="https://php.net/">PHP</a></p>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="static/jquery.min.js"></script>
-    <script src="static/bootstrap.js"></script>
+          
+    <div class="footer">
+      <font>Anonyme Dingsbox für das Nu<br />
+      Gelitten unter <a href="https://php.net/">PHP</a></font>
+    </div>
+    </div>
   </body>
 </html>
