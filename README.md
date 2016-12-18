@@ -16,7 +16,9 @@ Just a shitty, minimal, tellonym clone
 - Weg mit dem Bootstrap, eigenes CSS rein
 - Python rewrite
 - weitere Backends (statt Email)
+  - twitter (twidge?)
 - Craptcha?
+- "Setup"-Webapp: Name rein, Email rein und es kommt eine PHP-Datei raus, die dann alles hat und hochladbar ist
 
 ## Lizenzen
 - das is so Kacke...
