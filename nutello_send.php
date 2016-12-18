@@ -8,9 +8,9 @@ if(isset($_POST['msg'])) {
     $message = wordwrap($message, 70, "\r\n");
     $headerz = 'From: ' . TO . "\r\n" .
         'Date: ' . date("D, d M Y H:m:s") .
-        'Reply-To: ' $to  . "\r\n" .
+        'Reply-To: ' . TO  . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    mail($to, $subject, $message, $headerz);
+    mail(TO, $subject, $message, $headerz);
     
     header("location:index.php?success=1");
     die();
