@@ -3,7 +3,7 @@ Just a shitty, minimal, tellonym clone
 
 ## howto: 
 1. Repo als ZIP-Downloaden, entpacken und Ordnerstruktur irgendwo auf einen Webserver parken
-2. oben die to-Variable setzen, wenns die Adresse nicht gibt, gehen die Tells ins Nirvana
+2. in nutello_send.php oben statt `<email>` eine eigne Mailadresse vermerken
 3. Die Textbox rechts und die Überschriften anpassen. Ich bin Nuocu, ihr seid nicht Nuocu
 4. Should work
 5. Schreibt das lieber selber oder so. Der Code ist shit
