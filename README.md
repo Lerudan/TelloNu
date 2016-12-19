@@ -12,13 +12,14 @@ Just a shitty, minimal, tellonym clone
 - Wenn ihr euch das wirklich antun wollt: ich nehme gerne pull-requests und Vorschläge an
 - vielleicht wird das hier dann auch eines Tages mal cool
 
-## Wenn ich mal Zeit habe (also nie)
+## Wenn ich mal Zeit habe (grob nach Prio sortiert)
+- mobilfreundliches Design (Blame naums!)
+- strg+enter sendet Nachricht
 - Python rewrite
 - weitere Backends (statt Email)
   - twitter (twidge?)
-- Craptcha?
 - "Setup"-Webapp: Name rein, Email rein und es kommt eine PHP-Datei raus, die dann alles hat und hochladbar ist
-- mobilfreundliches Design (Blame naums!)
+- Craptcha?
 
 ## Lizenzen
 - CC-Zero, ihr dürft alles, ich muss nix wissen
