@@ -14,7 +14,6 @@ Just a shitty, minimal, tellonym clone
 
 ## Wenn ich mal Zeit habe (grob nach Prio sortiert)
 - mobilfreundliches Design (Blame naums!)
-- strg+enter sendet Nachricht
 - Python rewrite
 - weitere Backends (statt Email)
   - twitter (twidge?)
