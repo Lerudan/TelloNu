@@ -1,56 +1,108 @@
 body {
-    font-family: 'Titillium Web', Arial, sans-serif; font-weight:300; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; overflow-y: scroll; 
+    font-family: 'Titillium Web', Arial, sans-serif;
+    font-weight: 300;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    overflow-y: scroll;
     background-color: #edeceb;
 }
 
-p, a, div.editor_text, font, td, label, i, strong{
-    font-size: 16px; color: #272828; text-decoration: none; font-weight: 300}
-small, .small{
-    font-size: 14px; color: #272828}
-strong{
-    font-weight:900}
-.editor_text, .home_text > font, #home_videowrapper > font, td.news_preview_td > font{
-    line-height: 1.5em}
-a:hover{
-    color: #ffffff!important; background-color: #272828!important}
-input.submit, button, input[type="submit"], a.button{
-    color: #ffffff; font-weight: bold; background-color: #82b965;
-    padding: 5px 8px; margin: 0px; border:0px; 
+p, a, div.editor_text, font, td, label, i, strong {
+    font-size: 16px;
+    color: #272828;
+    text-decoration: none;
+    font-weight: 300
 }
-input.submit:hover, button:hover, input[type="submit"]:hover, a.button:hover{
-    background-color: #629945!important; cursor: pointer; color: #000000!important;
+
+small, .small {
+    font-size: 14px;
+    color: #272828
 }
-input.submit:active, button:active, input[type="submit"]:active, a.button:active{
-    background-color: #427925!important; cursor: pointer; color: #000000!important;
+
+strong {
+    font-weight: 900
 }
+
+.editor_text, .home_text > font, #home_videowrapper > font, td.news_preview_td > font {
+    line-height: 1.5em
+}
+
+a:hover {
+    color: #ffffff !important;
+    background-color: #272828 !important
+}
+
+input.submit, button, input[type="submit"], a.button {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #82b965;
+    padding: 5px 8px;
+    margin: 0px;
+    border: 0px;
+}
+
+input.submit:hover, button:hover, input[type="submit"]:hover, a.button:hover {
+    background-color: #629945 !important;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
+input.submit:active, button:active, input[type="submit"]:active, a.button:active {
+    background-color: #427925 !important;
+    cursor: pointer;
+    color: #000000 !important;
+}
+
 input[type="text"], input[type="password"], textarea {
-    color:#000000; background-color: #ffffff; border: 1px solid #c0c0c0
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0
 }
+
 input[type="text"]:hover, input[type="password"]:hover, textarea:hover {
     border: 1px solid #272828
 }
+
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     border: 1px solid #82b965
 }
 
 /* selection */
 ::selection {
-	background: #82b965; color:#ffffff;}
-::-moz-selection {
-	background: #82b965; color:#ffffff;}
+    background: #82b965;
+    color: #ffffff;
+}
 
+::-moz-selection {
+    background: #82b965;
+    color: #ffffff;
+}
 
 .error {
-    font-size: 16px; color: #ffffff!important; font-weight: bold;
-    margin: 3px auto 3px auto; padding: 8px 8px 8px 8px;
-    text-align:center; border: 0px;
-    background-color: #e74c3c}
-.error > strong, .success > strong { color: #ffffff }
+    font-size: 16px;
+    color: #ffffff !important;
+    font-weight: bold;
+    margin: 3px auto 3px auto;
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    border: 0px;
+    background-color: #e74c3c
+}
+
+.error > strong, .success > strong {
+    color: #ffffff
+}
+
 .success {
-    font-size: 16px; color: #ffffff!important; font-weight: bold;
-    margin: 3px auto 3px auto; padding: 8px 8px 8px 8px;
-    text-align:center; border: 0px;
-    background-color: #27ae60}
+    font-size: 16px;
+    color: #ffffff !important;
+    font-weight: bold;
+    margin: 3px auto 3px auto;
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    border: 0px;
+    background-color: #27ae60
+}
 
 .success:active, .error:click {
     display: none;
@@ -60,37 +112,53 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     float: right;
     font-weight: 900;
     color: #ffffff;
-    background:none!important
+    background: none !important
 }
 
 .main {
-    width:1024px; margin: 0 auto;
+    width: 1024px;
+    margin: 0 auto;
     background-color: #ffffff;
     padding: 5px;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .content {
-    width: 700px; margin: 5px;
+    width: 700px;
+    margin: 5px;
     display: inline-block;
-    vertical-align:top
-    
+    vertical-align: top
+
 }
 
-.editor
-{
+.editor {
     width: 680px;
-    
+
 }
 
-.sidebar{
-    display:inline-block;
+.sidebar {
+    display: inline-block;
     width: 300px
 }
 
-.footer{
-    border:0px; background-color: #272828; color: #ffffff;
-    margin: 5px -5px -5px -5px; height: 60px; padding:8px 0px 0px 20px; }
-.footer a, .footer p, .footer font {
-    color:#ffffff; font-size:12px}
+.footer {
+    border: 0px;
+    background-color: #272828;
+    color: #ffffff;
+    margin: 5px -5px -5px -5px;
+    height: 60px;
+    padding: 8px 0px 0px 20px;
+}
 
+.footer a, .footer p, .footer span {
+    color: #ffffff;
+    font-size: 12px
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        width: 100%;
+    }
+}
+
+/*TODO textfield with non fixed width*/
