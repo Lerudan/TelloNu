@@ -132,7 +132,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 .editor {
-    width: 680px;
+    width: 95%;
 
 }
 
@@ -159,6 +159,13 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     .main {
         width: 100%;
     }
+
+    .content {
+        width: 95%;
+    }
+
+    .sidebar {
+        width: 98%;
+    }
 }
 
-/*TODO textfield with non fixed width*/
