@@ -13,6 +13,14 @@
         {
             document.getElementsByClassName( className )[0].hidden=true;
         }
+        
+        document.body.addEventListener('keydown', function(e) {
+	        if(!(e.keyCode == 13 && (e.metaKey || e.ctrlKey))) return;
+	          var target = e.target;
+	          if(target.form) {
+	          	target.form.submit();
+          	}
+        });
     </script>
 
     <title>TelloNu</title>
@@ -69,4 +77,3 @@ if(isset($_GET['error']))
     </div>
   </body>
 </html>
-
